@@ -2,8 +2,16 @@ package Roman_to_Integer;
 
 import java.util.HashMap;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class Solution {
-    public int romanToInt(String number) {
+
+    public static void main(String[] args) {
+        assertEquals(3, romanToInt("III"));
+        assertEquals(58, romanToInt("LVIII"));
+        assertEquals(1994, romanToInt("MCMXCIV"));
+    }
+    public static int romanToInt(String number) {
         int n = number.length();
         HashMap<Character, Integer> map = new HashMap<Character, Integer>();
         map.put('I', 1);
