@@ -11,6 +11,7 @@ class Solution {
         assertEquals(58, romanToInt("LVIII"));
         assertEquals(1994, romanToInt("MCMXCIV"));
     }
+
     public static int romanToInt(String number) {
         int n = number.length();
         HashMap<Character, Integer> map = new HashMap<Character, Integer>();
